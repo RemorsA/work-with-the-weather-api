@@ -92,56 +92,49 @@
     width: 300px
     height: 300px
     border-radius: 0 10px 10px 10px
+    .container-picture
+      width: 300px
+      height: 300px
+      border-radius: 0 10px 10px 10px
+      transition: 0.4s
+      background-image: url('./static/day.jpg')
+      .container-picture.warm
+        background-image: url('./static/night.jpg')
 
   .container-input
     padding: 5px
+    .input-city
+      width: 400px
+      height: 40px
+      font-size: 25px
+      font-family: 'Oswald', sans-serif
+      border-radius: 20px
+      text-align: center
 
-  .input-city
-    width: 400px
-    height: 40px
-    font-size: 25px
-    font-family: 'Oswald', sans-serif
-    border-radius: 20px
-    text-align: center
 
   .container-weather-picture
     display: flex
-
-  .container-picture
-    width: 300px
-    height: 300px
-    border-radius: 0 10px 10px 10px
-    transition: 0.4s
-    background-image: url('./static/day.jpg')
-
-  .container-picture.warm
-    background-image: url('./static/night.jpg')
-
-  .weather-data
-    padding: 10px
-    font-size: 20px
-    color: white
-
-  .city
-    font-size: 30px
-    font-family: 'Oswald', sans-serif
-
-  .degres
-    margin-left: 20px
-    padding: 5px
-    font-size: 30px
-    width: 90px
-    height: 50px
-    background: #45C2B7
-    border-radius: 15px
-
-  .weather
-    margin-left: 20px
-    font-size: 40px
-    font-family: 'Oswald', sans-serif
-
-  .date-and-time
-    margin-top: 50px
-    font-size: 15px
-    font-family: 'Oswald', sans-serif
+    .weather-data
+      padding: 10px
+      font-size: 20px
+      color: white
+      .city
+        font-size: 30px
+        font-family: 'Oswald', sans-serif
+      .degres
+        margin-left: 20px
+        padding: 5px
+        font-size: 30px
+        width: 90px
+        height: 50px
+        background: #45C2B7
+        border-radius: 15px
+      .weather
+        margin-left: 20px
+        font-size: 40px
+        font-family: 'Oswald', sans-serif
+      .date-and-time
+        margin-top: 50px
+        font-size: 15px
+        font-family: 'Oswald', sans-serif
 </style>
