@@ -45,13 +45,13 @@
       }
     },
     methods: {
-      fetchWeather(e) {
+      async fetchWeather(e) {
         if (e.key === 'Enter') {
-          fetch(`${this.url_base}weather?q=${this.city}&units=metric&APPID=${this.api_key}`)
-            .then(res => {
-              return res.json()
-            })
-            .then(this.setResults)
+          const res = await fetch(
+            `${this.url_base}weather?q=${this.city}&units=metric&APPID=${this.api_key}`
+          )
+          const data = await res.json()
+          this.setResults(data)
         }
       },
       setResults(results) {
