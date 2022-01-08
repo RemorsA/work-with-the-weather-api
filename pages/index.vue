@@ -98,8 +98,8 @@
       border-radius: 0 10px 10px 10px
       transition: 0.4s
       background-image: url('./static/day.jpg')
-      .container-picture.warm
-        background-image: url('./static/night.jpg')
+    .container-picture.warm
+      background-image: url('./static/night.jpg')
 
   .container-input
     padding: 5px
